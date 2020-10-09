@@ -209,10 +209,9 @@ main {
     }
     .big-image {
       position: relative;
-      height: 400px;
-      @media (min-width: 620px) {
-        height: auto;
-      }
+      height: 534px;
+      background-repeat: no-repeat;
+      background-size: cover;
       @media (min-width: 1360px) {
         width: 60%;
         max-width: 840px;
@@ -248,12 +247,26 @@ main {
           }
         }
       }
-      .big-image-content {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      &.bg-one {
+        background-image: url('../images/mobile-image-hero-1.jpg');
+        @media (min-width: 620px) {
+          background-image: url('../images/desktop-image-hero-1.jpg');
+        }
+      }
+      &.bg-two {
+        background-image: url('../images/mobile-image-hero-2.jpg');
+        @media (min-width: 620px) {
+          background-image: url('../images/desktop-image-hero-2.jpg');
+        }
+      }
+      &.bg-three {
+        background-image: url('../images/mobile-image-hero-3.jpg');
+        @media (min-width: 620px) {
+          background-image: url('../images/desktop-image-hero-3.jpg');
+        }
       }
     }
+
     .content-wrapper {
       @media (min-width: 640px) {
         display: flex;
